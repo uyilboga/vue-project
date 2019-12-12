@@ -46,7 +46,7 @@
 </script>
 
 <style lang="less" scope>
-    @clrDark: #35495E;
+    @clrDark: #333;
     @clrMain: #41B883;
     .slider {
         position: relative;

@@ -75,7 +75,7 @@
         width: 100%;
         background: white;
         box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, .07);
-        font-family: 'Playfair Display', serif;
+        font-family: 'Poppins', serif;
     }
     
     .header-top {
@@ -84,7 +84,7 @@
         height: 50px;
         display: flex;
         align-items: center;
-        background: #35495E;
+        background: #222327;
         font-family: 'Poppins', sans-serif;
     }
     
@@ -132,7 +132,7 @@
     
     .menu ul li a {
         padding: 30px 10px;
-        color: #35495E;
+        color: #222327;
         font-weight: bold;
         font-size: 14px;
         text-transform: uppercase;
@@ -188,7 +188,7 @@
     }
     
     .contact-btn a:hover {
-        background: #35495E;
+        background: #222327;
         text-decoration: none;
     }
 </style>

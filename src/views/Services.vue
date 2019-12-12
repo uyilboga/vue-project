@@ -1,5 +1,20 @@
 <template>
   <div class="about">
-    <h1>This is an services page</h1>
+    <pageServices></pageServices>
   </div>
 </template>
+<script>
+  import PageServices from '@/components/common/Services.vue'
+
+  export default {
+    name:'services',
+    data: ()=> {
+      return {
+
+      }
+    },
+    components: {
+        PageServices
+    }
+  }
+</script>

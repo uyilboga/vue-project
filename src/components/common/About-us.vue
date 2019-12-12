@@ -4,7 +4,7 @@
             <div class="row align-items-center">
                 <div class="col-md-7">
                     <div class="content">
-                        <h3>{{aboutUs.title}}</h3>
+                        <h3>{{aboutUs.title}} <span>{{aboutUs.childTitle}}</span></h3>
                         <h5>{{aboutUs.subtitle}}</h5>
                         <p>{{aboutUs.description}}</p>
                         <p>{{aboutUs.content}}</p>
@@ -28,7 +28,8 @@
         data: () => {
             return {
                 aboutUs: {
-                    title: "About the Agency",
+                    title: "About the",
+                    childTitle: "Agency",
                     subtitle: "About Our Works",
                     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates iusto odit quaerat dignissimos nostrum fuga reiciendis ducimus",
                     content: "animi eligendi, accusantium, aut qui. Nemo, atque qui? Libero ducimus provident corporis voluptatum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates iusto odit quaerat dignissimos nostrum fuga reiciendis ducimus animi eligendi, accusantium, aut qui. Nemo, atque qui? Libero ducimus provident corporis voluptatum."
@@ -63,19 +64,11 @@
                 font-size: 56px;
                 display: inline-block;
                 font-weight: bold;
-                color: #35495E;
+                color: #333;
                 position: relative;
-                font-family: 'Playfair Display';
-                &:before {
-                    content: "";
-                    position: absolute;
-                    top: 84%;
-                    left: 0;
-                    z-index: -1;
-                    height: 10px;
-                    border-radius: 10px;
-                    width: 100%;
-                    background: linear-gradient(to right, #41b883, #35495E);
+                font-family: 'Poppins';
+                span {
+                    color: #41b883;
                 }
             }
             h5 {
@@ -83,7 +76,7 @@
                 text-transform: uppercase;
                 font-weight: 400;
                 color: #41b883;
-                margin: 40px 0;
+                margin: 20px 0;
             }
             p {
                 font-weight: 400;
@@ -95,15 +88,15 @@
                 line-height: 35px;
                 padding: 0 30px;
                 text-align: center;
-                border: 2px solid #35495E;
-                color: #35495E;
+                border: 2px solid #333;
+                color: #333;
                 margin-top: 30px;
                 font-size: 14px;
                 font-weight: 600;
                 -webkit-transition: 0.4s;
                 transition: 0.4s;
                 &:hover {
-                    background: #35495E;
+                    background: #333;
                     color: white;
                     text-decoration: none;
                 }
@@ -114,7 +107,7 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: 70%;
+            width: 64%;
             height: 100%;
             background: rgba(65, 184, 129, 0.1);
         }

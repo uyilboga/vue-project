@@ -2,8 +2,8 @@
     <div class="services">
         <div class="container">
             <div class="services-title">
-                <h3>{{ title }}</h3>
                 <h5>{{ subtitle }}</h5>
+                <h3>{{ title }}</h3>
                 <span>Services</span>
             </div>
             <div class="row">
@@ -33,32 +33,32 @@
                 subtitle: 'Hizmet verdiğimiz alanlar',
                 services: [{
                     id: 1,
-                    icon: '../../assets/artificle-intelligence.svg',
+                    icon: require('@/assets/artificial-inteligence.svg'),
                     title: 'Artifical Inteligence',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sint consequatur autem dicta eius recusandae eligendi sapiente nisi doloribus impedit illo veniam exercitationem aspernatur voluptatum similique dolorum earum, necessitatibus deleniti!'
                 }, {
                     id: 2,
-                    icon: '../../assets/deep-learning.svg',
+                    icon: require('@/assets/deep-learning.svg'),
                     title: 'Machine Learning',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sint consequatur autem dicta eius recusandae eligendi sapiente nisi doloribus impedit illo veniam exercitationem aspernatur voluptatum similique dolorum earum, necessitatibus deleniti!'
                 }, {
                     id: 3,
-                    icon: '../../assets/data-virtualization.svg',
+                    icon: require('@/assets/robot.svg'),
                     title: 'Data Virtualization',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sint consequatur autem dicta eius recusandae eligendi sapiente nisi doloribus impedit illo veniam exercitationem aspernatur voluptatum similique dolorum earum, necessitatibus deleniti!'
                 }, {
                     id: 4,
-                    icon: '../../assets/data.svg',
+                    icon: require('@/assets/data.svg'),
                     title: 'Data Science',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sint consequatur autem dicta eius recusandae eligendi sapiente nisi doloribus impedit illo veniam exercitationem aspernatur voluptatum similique dolorum earum, necessitatibus deleniti!'
                 }, {
                     id: 5,
-                    icon: '../../assets/mobile.svg',
+                    icon: require('@/assets/mobile.svg'),
                     title: 'Mobile Application Development',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sint consequatur autem dicta eius recusandae eligendi sapiente nisi doloribus impedit illo veniam exercitationem aspernatur voluptatum similique dolorum earum, necessitatibus deleniti!'
                 }, {
                     id: 6,
-                    icon: '../..//assets/automation.svg',
+                    icon: require('@/assets/automation.svg'),
                     title: 'Web Application Development',
                     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sint consequatur autem dicta eius recusandae eligendi sapiente nisi doloribus impedit illo veniam exercitationem aspernatur voluptatum similique dolorum earum, necessitatibus deleniti!'
                 }, ]
@@ -71,27 +71,53 @@
     .services {
         padding: 80px 0;
         position: relative;
-        background: #35495E;
+        background: #222327;
         font-family: 'Poppins';
+    }
+    .services:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../../assets/bg-noise.gif');
+        opacity: 0.02;
     }
     
     .services .services-box {
         padding: 30px;
         text-align: left;
         color: white;
+        margin-bottom: 40px;
     }
     
+    .services .services-box .icon {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 20px 0;
+    }
+    .services .services-box .icon img {
+        width: 100%;
+    }
     .services .services-box p {
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 100;
         opacity: .8;
     }
     
     .services .services-box h3 {
         font-size: 16px;
-        font-family: 'Playfair Display';
+        font-family: 'Poppins';
         font-weight: bold;
         text-transform: uppercase;
+    }
+    .services .services-box a {
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        color: #41B883;
     }
     
     .services .services-box i {
@@ -104,14 +130,19 @@
     }
     
     .services .services-title h3 {
-        font-size: 36px;
+        font-size: 64px;
         font-weight: bold;
         color: white;
+        font-family: 'Poppins',sans-serif;
     }
-    
+    .services .services-title h5 {
+        font-size: 16px;
+        font-weight: 100;
+        color:#41b883;
+    }
     .services .services-title span {
         position: absolute;
-        top: -5%;
+        top: 0;
         left: 10%;
         color: rgba(2555, 255, 255, 0.02);
         font-size: 160px;
